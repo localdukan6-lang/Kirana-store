@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123c2a">
+<title>Ashish Kirana Store | Fresh Groceries Delivered</title>
+<meta name="description" content="Shop everyday groceries, rice, atta, dal, spices, dairy, snacks and household essentials at Fresh Basket.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--green:#16834a;--green-dark:#123c2a;--green-deep:#0b291c;--lime:#d8f36a;--cream:#f7f8f2;--ink:#17271d;--muted:#718075;--line:#e5eadf;--white:#fff;--shadow:0 14px 40px rgba(16,49,31,.09)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}button,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{max-width:1240px;margin:auto;padding:0 22px}
+.announcement{background:var(--green-deep);color:#f5f8f0;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:.2px}.announcement b{color:var(--lime)}
+header{position:sticky;top:0;z-index:100;background:rgba(18,60,42,.97);backdrop-filter:blur(14px);color:#fff;box-shadow:0 8px 25px #102d1b16}.header-inner{max-width:1240px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;font:800 22px Manrope,sans-serif;letter-spacing:-.8px}.brand-mark{width:44px;height:44px;border-radius:15px;background:var(--lime);color:var(--green-dark);display:grid;place-items:center;font-size:23px;box-shadow:0 5px 16px #0002}.brand em{font-style:normal;color:var(--lime)}.header-note{font-size:12px;color:#d0dfd3;display:flex;align-items:center;gap:7px;margin-left:auto;margin-right:10px}.header-note i{color:var(--lime)}.header-actions{display:flex;gap:9px;align-items:center}.icon-btn{width:43px;height:43px;border:1px solid #ffffff35;border-radius:14px;background:#ffffff10;color:white;display:grid;place-items:center;font-size:19px;position:relative}.icon-btn:hover{background:#ffffff20}.cart-count{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;border-radius:20px;background:var(--lime);color:var(--green-dark);display:grid;place-items:center;font-size:11px;font-weight:800;padding:0 5px}
+.hero{padding:45px 0 54px;background:radial-gradient(circle at 80% 20%,#2d9860 0,transparent 30%),linear-gradient(125deg,#0b291c,#145d37 70%,#16834a);color:white;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff12;border-radius:50%;right:-110px;bottom:-210px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff05;pointer-events:none}.hero-inner{display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff38;background:#ffffff12;padding:8px 13px;border-radius:30px;color:#e9f7e7;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}.eyebrow span{width:7px;height:7px;border-radius:50%;background:var(--lime)}h1,h2,h3{font-family:Manrope,sans-serif}.hero h1{font-size:clamp(36px,5vw,61px);line-height:1.08;letter-spacing:-2.5px;max-width:650px;margin-bottom:18px}.hero h1 em{font-style:normal;color:var(--lime)}.hero-copy{font-size:15px;line-height:1.85;color:#dce9df;max-width:560px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:13px;padding:14px 20px;font-size:13px;font-weight:800;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-lime{background:var(--lime);color:var(--green-deep)}.btn-outline{border:1px solid #ffffff50;background:#ffffff10;color:white}.hero-trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:27px;color:#d8e8db;font-size:12px}.hero-trust span{display:flex;gap:7px;align-items:center}.hero-trust i{color:var(--lime)}.hero-visual{position:relative;padding:12px}.hero-image{width:100%;height:345px;object-fit:cover;border-radius:30px;border:1px solid #ffffff55;box-shadow:0 25px 55px #00180d50}.floating-card{position:absolute;bottom:-5px;left:-10px;background:#fff;color:var(--ink);border-radius:18px;padding:14px 17px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center}.floating-icon{width:42px;height:42px;background:#eff9dd;color:var(--green);border-radius:13px;display:grid;place-items:center;font-size:20px}.floating-card strong{display:block;font-size:13px}.floating-card small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+.search-section{margin-top:-25px;position:relative;z-index:3}.search-bar{max-width:850px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:19px;box-shadow:0 15px 40px #123c2a13;display:flex;align-items:center;gap:13px;padding:9px 10px 9px 19px}.search-bar>i{font-size:21px;color:var(--green)}.search-bar input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:12px 0;color:var(--ink)}.search-bar button{border:0;border-radius:13px;background:var(--green);color:white;padding:13px 20px;font-weight:800;font-size:13px}.search-hint{font-size:11px;color:var(--muted);text-align:center;margin-top:10px}
+.section{padding:47px 0 0}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px}.kicker{color:var(--green);font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;margin-bottom:8px}.section-heading h2{font-size:clamp(24px,3vw,34px);letter-spacing:-1px}.section-heading p{font-size:13px;color:var(--muted);margin-top:7px}.category-list{display:flex;gap:10px;overflow-x:auto;padding:2px 1px 13px;scrollbar-width:thin}.category-btn{flex-shrink:0;border:1px solid var(--line);background:white;border-radius:13px;padding:11px 16px;font-size:12px;font-weight:700;color:#4b5c4e;transition:.2s}.category-btn.active,.category-btn:hover{background:var(--green);border-color:var(--green);color:white;box-shadow:0 5px 14px #16834a25}
+.product-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.results-count{font-size:12px;color:var(--muted)}.sort-select{border:1px solid var(--line);background:white;border-radius:10px;padding:9px 12px;font-size:12px;color:var(--ink);outline-color:var(--green)}
+.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.product-card{min-width:0;background:white;border:1px solid var(--line);border-radius:19px;overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s}.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#cbdcc9}.product-image-wrap{height:200px;position:relative;background:#edf2e9;overflow:hidden}.product-image{width:100%;height:100%;object-fit:cover;transition:transform .4s}.product-card:hover .product-image{transform:scale(1.05)}.product-label{position:absolute;top:11px;left:11px;background:#effbd7;color:#315d20;border-radius:8px;padding:6px 8px;font-size:10px;font-weight:800;box-shadow:0 3px 10px #0000000a}.product-body{padding:14px}.product-category{font-size:10px;font-weight:800;letter-spacing:.5px;color:var(--green);text-transform:uppercase;margin-bottom:7px}.product-name{font-size:14px;line-height:1.4;min-height:39px;font-weight:800;letter-spacing:-.2px}.product-weight{font-size:11px;color:var(--muted);margin-top:4px}.price-line{display:flex;align-items:center;justify-content:space-between;gap:7px;margin-top:13px}.product-price{font:800 19px Manrope,sans-serif}.product-old{font-size:10px;color:#99a39a;text-decoration:line-through;margin-top:3px}.discount{font-size:10px;font-weight:800;color:#16834a;background:#eef8e9;padding:5px 6px;border-radius:7px;white-space:nowrap}.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:13px}.add-btn,.buy-btn{padding:10px 4px;border-radius:10px;font-size:11px;font-weight:800;border:1px solid var(--green);transition:.2s}.add-btn{background:white;color:var(--green)}.add-btn:hover{background:#eff9ef}.buy-btn{background:var(--green);color:white}.buy-btn:hover{background:var(--green-dark)}.no-results{display:none;background:white;text-align:center;padding:45px 20px;border:1px dashed #cbd8c8;border-radius:18px;color:var(--muted)}.no-results i{font-size:30px;color:var(--green)}.no-results p{margin-top:10px}
+.benefits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:36px}.benefit{background:white;border:1px solid var(--line);border-radius:17px;padding:21px 15px;display:flex;gap:12px;align-items:flex-start}.benefit-icon{flex:0 0 43px;width:43px;height:43px;display:grid;place-items:center;border-radius:13px;background:#eff8e7;color:var(--green);font-size:21px}.benefit h3{font-size:13px;margin:2px 0 6px}.benefit p{font-size:11px;line-height:1.65;color:var(--muted)}
+.promo{margin:43px 0 5px;padding:31px 34px;border-radius:24px;background:linear-gradient(110deg,#e6f4d6,#f4f7e7);display:flex;align-items:center;justify-content:space-between;gap:25px;overflow:hidden}.promo .kicker{margin-bottom:8px}.promo h2{font-size:clamp(24px,3vw,34px);letter-spacing:-1px;margin-bottom:8px}.promo p{font-size:13px;color:#607064;line-height:1.7;max-width:520px}.promo .btn{margin-top:17px;background:var(--green);color:white}.promo-image{width:185px;height:150px;object-fit:cover;border-radius:18px;box-shadow:0 10px 25px #123c2a15}
+footer{margin-top:45px;background:var(--green-deep);color:#c7d7cb;padding:40px 0 18px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer-brand{font:800 20px Manrope,sans-serif;color:white;margin-bottom:12px}.footer-brand span{color:var(--lime)}footer p{font-size:12px;line-height:1.8;max-width:390px}footer h4{font-size:13px;color:white;margin-bottom:14px}footer ul{list-style:none}footer li{font-size:12px;margin:11px 0}footer a:hover{color:var(--lime)}.footer-bottom{border-top:1px solid #ffffff20;margin-top:28px;padding-top:17px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:11px;color:#9fb4a4}
+.cart-overlay{display:none;position:fixed;inset:0;background:#06190eb8;z-index:200}.cart-overlay.open{display:block}.cart-drawer{position:absolute;right:0;top:0;width:min(450px,100%);height:100%;background:#fff;display:flex;flex-direction:column;padding:21px}.cart-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--line)}.cart-head h2{font-size:21px;letter-spacing:-.5px}.close-btn{border:0;background:#eff3ec;width:38px;height:38px;border-radius:12px;font-size:21px}.cart-items{flex:1;overflow:auto;padding:12px 0}.cart-item{display:grid;grid-template-columns:66px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.cart-item img{width:66px;height:66px;border-radius:12px;object-fit:cover}.cart-item h4{font-size:13px;margin:3px 0 6px}.cart-item-price{font-size:13px;color:var(--green);font-weight:800}.qty-row{display:flex;align-items:center;gap:12px;margin-top:8px}.qty-row button{width:27px;height:27px;border:1px solid var(--line);border-radius:8px;background:#f7f8f2}.cart-footer{border-top:1px solid var(--line);padding-top:17px}.total-row{display:flex;justify-content:space-between;font-size:19px;font-weight:800;margin-bottom:15px}.checkout-btn{width:100%;padding:15px;border:0;border-radius:13px;background:#16834a;color:white;font-weight:800}.checkout-note{font-size:10px;text-align:center;color:var(--muted);margin-top:10px}.empty-cart{text-align:center;color:var(--muted);padding:45px 10px}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,100px);opacity:0;z-index:300;background:var(--green-deep);color:white;border-radius:13px;padding:13px 19px;box-shadow:var(--shadow);font-size:12px;transition:.25s;max-width:90%;text-align:center}.toast.show{transform:translate(-50%,0);opacity:1}
+@media(max-width:1000px){.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.benefits{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-inner{gap:25px}.hero-image{height:300px}.header-note{display:none}}
+@media(max-width:700px){.container{padding:0 14px}.header-inner{padding:10px 14px}.brand{font-size:18px}.brand-mark{width:39px;height:39px;border-radius:13px}.hero{padding:35px 0 46px}.hero-inner{grid-template-columns:1fr}.hero h1{font-size:42px;letter-spacing:-1.7px}.hero-copy{font-size:13px}.hero-visual{display:none}.hero-trust{gap:12px}.search-bar{padding-left:13px;gap:8px}.search-bar input{font-size:12px}.search-bar button{padding:12px 13px}.section{padding-top:37px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-image-wrap{height:155px}.product-body{padding:10px}.product-name{font-size:12px;min-height:35px}.product-price{font-size:16px}.product-actions{gap:5px}.add-btn,.buy-btn{font-size:10px}.benefits{gap:9px}.benefit{padding:14px 10px;display:block}.benefit-icon{margin-bottom:10px}.benefit h3{font-size:12px}.benefit p{font-size:10px}.promo{padding:23px 20px}.promo-image{width:105px;height:105px}.footer-grid{grid-template-columns:1fr 1fr;gap:22px}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:390px){.hero h1{font-size:35px}.product-image-wrap{height:130px}.product-price{font-size:15px}.discount{display:none}.icon-btn{width:38px;height:38px}.header-actions{gap:6px}.promo-image{display:none}.section-heading h2{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="announcement">🛒 <b>Fresh finds, everyday value.</b> Your neighbourhood grocery basket starts here.</div>
+<header><div class="header-inner">
+<a class="brand" href="#"><span class="brand-mark"><i class="bi bi-basket2-fill"></i></span><span>Ashish <em>kirana</em></span></a>
+<div class="header-note"><i class="bi bi-geo-alt-fill"></i> Everyday essentials, all in one place</div>
+<div class="header-actions">
+<button class="icon-btn" aria-label="Search products" onclick="document.getElementById('searchInput').focus()"><i class="bi bi-search"></i></button>
+<button class="icon-btn" aria-label="Open cart" onclick="openCart()"><i class="bi bi-bag"></i><span class="cart-count" id="cartCount">0</span></button>
+</div></div></header>
+<main>
+<section class="hero"><div class="container hero-inner">
+<div><div class="eyebrow"><span></span> ASHISH KIRANA STORE</div>
+<h1>Good food. Great value. <em>Every day.</em></h1>
+<p class="hero-copy">From pantry staples to little everyday treats, find the groceries your home needs in one easy place. Browse, build your basket and send your order in a few taps.</p>
+<div class="hero-buttons"><a class="btn btn-lime" href="#products">Shop groceries <i class="bi bi-arrow-up-right"></i></a><a class="btn btn-outline" href="#categories">Explore categories</a></div>
+<div class="hero-trust"><span><i class="bi bi-check-circle-fill"></i> Everyday essentials</span><span><i class="bi bi-basket2-fill"></i> Easy basket building</span><span><i class="bi bi-whatsapp"></i> WhatsApp ordering</span></div>
+</div>
+<div class="hero-visual"><img class="hero-image" src="https://loremflickr.com/900/700/fresh,vegetables,grocery?lock=501" alt="Colourful fresh vegetables and groceries" onerror="this.src='https://placehold.co/900x700/eaf5eb/176d3d?text=Fresh+Groceries'">
+<div class="floating-card"><span class="floating-icon"><i class="bi bi-basket2-fill"></i></span><div><strong>Your basket, your way</strong><small>Choose your daily essentials</small></div></div></div>
+</div></section>
+<div class="container search-section"><div class="search-bar"><i class="bi bi-search"></i><input id="searchInput" type="search" placeholder="Try rice, atta, biscuits, milk..." aria-label="Search grocery products"><button onclick="searchProducts()">Search</button></div><p class="search-hint">Search across our grocery collection</p></div>
+<section class="section container" id="categories"><div class="section-heading"><div><div class="kicker">Find your favourites</div><h2>Shop by category</h2><p>All the little things that keep your home running.</p></div></div><div class="category-list" id="categoryList"></div></section>
+<section class="section container" id="products"><div class="section-heading"><div><div class="kicker">Stock up & save time</div><h2 id="productHeading">All grocery products</h2><p>Browse the collection and add items to your basket.</p></div></div>
+<div class="product-toolbar"><span class="results-count" id="productCount">Loading products...</span><select class="sort-select" id="sortSelect" aria-label="Sort products"><option value="featured">Featured first</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name: A to Z</option></select></div>
+<div class="product-grid" id="productGrid"></div><div class="no-results" id="noResults"><i class="bi bi-search"></i><p>No products found. Try another search or category.</p></div>
+<div class="benefits">
+<div class="benefit"><span class="benefit-icon"><i class="bi bi-basket2"></i></span><div><h3>Everyday essentials</h3><p>Daily groceries and pantry favourites in one place.</p></div></div>
+<div class="benefit"><span class="benefit-icon"><i class="bi bi-shield-check"></i></span><div><h3>Quality focused</h3><p>Product details and prices shown clearly.</p></div></div>
+<div class="benefit"><span class="benefit-icon"><i class="bi bi-tags"></i></span><div><h3>Know your total</h3><p>Review quantities and estimated cost before ordering.</p></div></div>
+<div class="benefit"><span class="benefit-icon"><i class="bi bi-whatsapp"></i></span><div><h3>Easy ordering</h3><p>Send your selected basket directly through WhatsApp.</p></div></div>
+</div>
+<div class="promo"><div><div class="kicker">A little easier, every day</div><h2>Your next grocery run starts here.</h2><p>Build your basket at your own pace. We’ll send your selected items to the store so availability and delivery can be confirmed.</p><a class="btn" href="#products">Build my basket <i class="bi bi-arrow-right"></i></a></div><img class="promo-image" src="https://loremflickr.com/500/400/grocery,market,produce?lock=502" alt="Fresh market produce" onerror="this.src='https://placehold.co/500x400/eaf5eb/176d3d?text=Fresh+Basket'"></div>
+</section></main>
+<footer><div class="container"><div class="footer-grid">
+<div><div class="footer-brand">🛒 Fresh <span>Basket</span></div><p>Your neighbourhood kirana store for everyday groceries, pantry staples, snacks and household essentials. Simple browsing, easy ordering.</p></div>
+<div><h4>Explore</h4><ul><li><a href="#categories">Shop categories</a></li><li><a href="#products">All products</a></li><li><a href="#" onclick="openCart();return false">My basket</a></li></ul></div>
+<div><h4>Customer support</h4><ul><li>Orders via WhatsApp</li><li>Delivery: confirm with store</li><li>Prices: confirm before payment</li></ul></div>
+</div><div class="footer-bottom"><span>© 2026 Fresh Basket. All rights reserved.</span><span>Fresh groceries for everyday living.</span></div></div></footer>
+<div class="cart-overlay" id="cartOverlay" onclick="overlayClick(event)"><div class="cart-drawer">
+<div class="cart-head"><h2><i class="bi bi-basket2"></i> Your basket</h2><button class="close-btn" onclick="closeCart()" aria-label="Close cart"><i class="bi bi-x"></i></button></div>
+<div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="total-row"><span>Estimated total</span><span id="cartTotal">₹0</span></div><button class="checkout-btn" onclick="checkout()"><i class="bi bi-whatsapp"></i> Order on WhatsApp</button><p class="checkout-note">Final prices, availability and delivery charges are confirmed by the store.</p></div>
+</div></div><div class="toast" id="toast"></div>
+
+<script>
+/* IMPORTANT: Replace this demo number and demo prices before publishing. */
+const STORE_WHATSAPP="919917422376";
+const catalog = [
+  ["Rice & Grains / चावल और अनाज", "rice", [
+    ["Premium Basmati Rice / प्रीमियम बासमती चावल", 120, "1 kg", "basmati rice, बासमती, चावल", "./images/1.jpeg"],
+    ["Regular Basmati Rice / रेगुलर बासमती चावल", 90, "1 kg", "regular basmati, बासमती, चावल", "./images/2.jpeg"],
+    ["Sona Masoori Rice / सोना मसूरी चावल", 65, "1 kg", "sona masoori, सोना मसूरी, चावल", "./images/3.jpeg"],
+    ["Kolam Rice / कोलम चावल", 70, "1 kg", "kolam rice, कोलम, चावल", "./images/4.jpeg"],
+    ["Gobindobhog Rice / गोविन्दभोग चावल", 110, "1 kg", "gobindobhog, गोविन्दभोग, चावल", "./images/5.jpeg"],
+    ["Brown Rice / ब्राउन राइस", 95, "1 kg", "brown rice, ब्राउन, चावल", "./images/6.jpeg"],
+    ["Poha / पोहा", 45, "500 g", "poha, पोहा, rice flakes", "./images/7.jpeg"],
+    ["Dalia / दालिया", 40, "500 g", "dalia, दालिया, broken wheat", "./images/8.jpeg"],
+    ["Sabudana / साबूदाना", 55, "500 g", "sabudana, साबूदाना, tapioca", "./images/9.jpeg"],
+    ["Rajgira / राजगीरा", 65, "500 g", "rajgira, राजगीरा, amaranth", "./images/10.jpeg"],
+    ["Jowar / ज्वार", 50, "1 kg", "jowar, ज्वार, millet", "./images/11.jpeg"],
+    ["Bajra / बाजरा", 52, "1 kg", "bajra, बाजरा, millet", "./images/12.jpeg"],
+    ["Pearl Millet / पेर्ल मिलेट", 58, "1 kg", "pearl millet, पेर्ल मिलेट, grain", "./images/13.jpeg"],
+    ["Makhana / मखाना", 120, "200 g", "makhana, मखाना, fox nuts", "./images/14.jpeg"],
+    ["Quinoa / क्विनोआ", 180, "500 g", "quinoa, क्विनोआ, superfood", "./images/15.jpeg"]
+  ]],
+
+  ["Atta & Flour / आटा और मैदा", "flour", [
+    ["Whole Wheat Atta / गेहूं का आटा", 45, "1 kg", "whole wheat atta, गेहूं का आटा, आटा", "./images/16.jpeg"],
+    ["Multigrain Atta / मल्टीग्रेन आटा", 65, "1 kg", "multigrain atta, मल्टीग्रेन, आटा", "./images/17.jpeg"],
+    ["Besan / बेसन", 75, "1 kg", "besan, बेसन, gram flour", "./images/18.jpeg"],
+    ["Maida / मैदा", 38, "1 kg", "maida, मैदा, flour", "./images/19.jpeg"],
+    ["Sooji / सूजी", 40, "500 g", "sooji, सूजी, semolina", "./images/20.jpeg"],
+    ["Makki Atta / मकई का आटा", 45, "500 g", "makki atta, मकई का आटा, corn flour", "./images/21.jpeg"],
+    ["Ragi Flour / रागी आटा", 60, "500 g", "ragi flour, रागी आटा, millet", "./images/22.jpeg"],
+    ["Rice Flour / चावल का आटा", 45, "500 g", "rice flour, चावल का आटा", "./images/23.jpeg"],
+    ["Bajra Atta / बाजरे का आटा", 45, "500 g", "bajra atta, बाजरे का आटा, millet flour", "./images/24.jpeg"],
+    ["Corn Flour / कॉर्न फ्लावर", 55, "500 g", "corn flour, कॉर्न फ्लावर, flour", "./images/25.jpeg"],
+    ["Wheat Flour / गेहूं का फ्लोर", 42, "1 kg", "wheat flour, गेहूं का फ्लोर, flour", "./images/26.jpeg"],
+    ["Gram Flour / ग्रैम फ्लोर", 78, "1 kg", "gram flour, ग्रैम फ्लोर", "./images/27.jpeg"],
+    ["Oats Flour / ओट्स फ्लोर", 80, "500 g", "oats flour, ओट्स फ्लोर", "./images/28.jpeg"],
+    ["Arrowroot Flour / आढ़रूट फ्लोर", 90, "500 g", "arrowroot flour, आढ़रूट फ्लोर", "./images/29.jpeg"],
+    ["Chickpea Flour / चने का आटा", 68, "500 g", "chickpea flour, चने का आटा", "./images/30.jpeg"]
+  ]],
+
+  ["Dal & Pulses / दाल और दलिया", "dal", [
+    ["Toor Dal / तूर दाल", 95, "500 g", "toor dal, तूर दाल, dal", "./images/31.jpeg"],
+    ["Moong Dal / मूंग दाल", 80, "500 g", "moong dal, मूंग दाल, dal", "./images/32.jpeg"],
+    ["Masoor Dal / मसूर दाल", 65, "500 g", "masoor dal, मसूर दाल, lentils", "./images/33.jpeg"],
+    ["Chana Dal / चना दाल", 55, "500 g", "chana dal, चना दाल, dal", "./images/34.jpeg"],
+    ["Urad Dal / उड़द दाल", 85, "500 g", "urad dal, उड़द दाल, lentils", "./images/35.jpeg"],
+    ["Rajma / राजमा", 85, "500 g", "rajma, राजमा, kidney beans", "./images/36.jpeg"],
+    ["Kabuli Chana / कबुली चना", 75, "500 g", "kabuli chana, कबुली चना, chickpeas", "./images/37.jpeg"],
+    ["Kala Chana / काला चना", 55, "500 g", "kala chana, काला चना, black chickpeas", "./images/38.jpeg"],
+    ["Green Moong / हरी मूंग", 65, "500 g", "green moong, हरी मूंग, beans", "./images/39.jpeg"],
+    ["White Peas / सफेद मटर", 50, "500 g", "white peas, सफेद मटर, peas", "./images/40.jpeg"],
+    ["Black Eyed Beans / ब्लैक आईड बीन्स", 70, "500 g", "black eyed beans, ब्लैक आईड बीन्स, beans", "./images/41.jpeg"],
+    ["Horse Gram / कुलथी", 60, "500 g", "horse gram, कुलथी, gram", "./images/42.jpeg"],
+    ["Moth Beans / मोथ दाल", 62, "500 g", "moth beans, मोथ दाल, beans", "./images/43.jpeg"],
+    ["Split Bengal Gram / चना दाल", 58, "500 g", "split bengal gram, चना दाल, gram", "./images/44.jpeg"],
+    ["Mixed Lentils / मिक्स लैटिल्स", 90, "500 g", "mixed lentils, मिक्स लैटिल्स, lentils", "./images/45.jpeg"]
+  ]],
+
+  ["Spices & Masala / मसाले और मिक्स", "spice", [
+    ["Turmeric Powder / हल्दी पाउडर", 35, "100 g", "turmeric powder, हल्दी पाउडर, spice", "./images/46.jpeg"],
+    ["Red Chilli Powder / लाल मिर्च पाउडर", 45, "100 g", "red chilli powder, लाल मिर्च, spice", "./images/47.jpeg"],
+    ["Coriander Powder / धनिया पाउडर", 35, "100 g", "coriander powder, धनिया पाउडर, spice", "./images/48.jpeg"],
+    ["Cumin Seeds / जीरा", 45, "100 g", "cumin seeds, जीरा, jeera", "./images/49.jpeg"],
+    ["Garam Masala / गरम मसाला", 55, "100 g", "garam masala, गरम मसाला, spice", "./images/50.jpeg"],
+    ["Black Pepper / काली मिर्च", 65, "50 g", "black pepper, काली मिर्च, pepper", "./images/51.jpeg"],
+    ["Mustard Seeds / सरसों के बीज", 25, "100 g", "mustard seeds, सरसों के बीज, mustard", "./images/52.jpeg"],
+    ["Fenugreek Seeds / मेथी", 25, "100 g", "fenugreek seeds, मेथी, methi", "./images/53.jpeg"],
+    ["Amchur Powder / अमचूर पाउडर", 35, "100 g", "amchur powder, अमचूर पाउडर, mango powder", "./images/54.jpeg"],
+    ["Chaat Masala / चाट मसाला", 35, "100 g", "chaat masala, चाट मसाला, spice", "./images/55.jpeg"],
+    ["Kasuri Methi / कसूरी मेथी", 38, "50 g", "kasuri methi, कसूरी मेथी, methi", "./images/56.jpeg"],
+    ["Ajwain / अजवाइन", 30, "100 g", "ajwain, अजवाइन, carom seeds", "./images/57.jpeg"],
+    ["Cardamom / इलायची", 120, "50 g", "cardamom, इलायची, elaichi", "./images/58.jpeg"],
+    ["Cloves / लौंग", 70, "50 g", "cloves, लौंग, laung", "./images/59.jpeg"],
+    ["Cinnamon / दालचीनी", 60, "50 g", "cinnamon, दालचीनी, dalchini", "./images/60.jpeg"]
+  ]],
+
+  ["Oil & Ghee / तेल और घी", "oil", [
+    ["Sunflower Oil / सूरजमुखी तेल", 145, "1 litre", "sunflower oil, सूरजमुखी तेल, oil", "./images/61.jpeg"],
+    ["Mustard Oil / सरसों का तेल", 160, "1 litre", "mustard oil, सरसों का तेल, oil", "./images/62.jpeg"],
+    ["Soybean Oil / सोयाबीन तेल", 135, "1 litre", "soybean oil, सोयाबीन तेल, oil", "./images/63.jpeg"],
+    ["Groundnut Oil / मूंगफली का तेल", 190, "1 litre", "groundnut oil, मूंगफली का तेल, oil", "./images/64.jpeg"],
+    ["Pure Ghee / शुद्ध घी", 320, "500 ml", "pure ghee, शुद्ध घी, ghee", "./images/65.jpeg"],
+    ["Butter / मक्खन", 60, "100 g", "butter, मक्खन, dairy", "./images/66.jpeg"],
+    ["Pickle / अचार", 75, "200 g", "pickle, अचार, jar", "./images/67.jpeg"],
+    ["Tomato Ketchup / टमाटर केचप", 85, "500 g", "tomato ketchup, टमाटर केचप, ketchup", "./images/68.jpeg"],
+    ["Green Chilli Sauce / हरी मिर्च सॉस", 55, "200 g", "green chilli sauce, हरी मिर्च सॉस, sauce", "./images/69.jpeg"],
+    ["Vinegar / सिरका", 45, "500 ml", "vinegar, सिरका, bottle", "./images/70.jpeg"],
+    ["Sesame Oil / तिल का तेल", 220, "250 ml", "sesame oil, तिल का तेल, oil", "./images/71.jpeg"],
+    ["Olive Oil / जैतून का तेल", 310, "250 ml", "olive oil, जैतून का तेल, oil", "./images/72.jpeg"],
+    ["Coconut Oil / नारियल का तेल", 180, "250 ml", "coconut oil, नारियल का तेल, oil", "./images/73.jpeg"],
+    ["Rice Bran Oil / चावल का तेल", 170, "1 litre", "rice bran oil, चावल का तेल, oil", "./images/74.jpeg"],
+    ["Vanaspati / वनस्पति", 120, "1 kg", "vanaspati, वनस्पति, shortening", "./images/75.jpeg"]
+  ]],
+
+  ["Bread & Bakery / ब्रेड और बेकरी", "bread", [
+    ["White Bread / सफेद ब्रेड", 40, "400 g", "white bread, सफेद ब्रेड, bread", "./images/76.jpeg"],
+    ["Brown Bread / ब्राउन ब्रेड", 50, "400 g", "brown bread, ब्राउन ब्रेड, bread", "./images/77.jpeg"],
+    ["Milk Bread / मिल्क ब्रेड", 45, "400 g", "milk bread, मिल्क ब्रेड, bread", "./images/78.jpeg"],
+    ["Burger Buns / बर्गर बन्स", 40, "Pack", "burger buns, बर्गर बन्स, buns", "./images/79.jpeg"],
+    ["Pav / पाव", 35, "Pack", "pav, पाव, bread rolls", "./images/80.jpeg"],
+    ["Rusk Toast / रस्क टोस्ट", 60, "300 g", "rusk toast, रस्क टोस्ट, bread", "./images/81.jpeg"],
+    ["Plain Khari / प्लेन खारी", 55, "200 g", "plain khari, प्लेन खारी, pastry", "./images/82.jpeg"],
+    ["Fruit Cake / फ्रूट केक", 70, "Pack", "fruit cake, फ्रूट केक, cake", "./images/83.jpeg"],
+    ["Cream Roll / क्रीम रोल", 30, "Pack", "cream roll, क्रीम रोल, pastry", "./images/84.jpeg"],
+    ["Pizza Base / पिज़्ज़ा बेस", 45, "Pack", "pizza base, पिज़्ज़ा बेस, bread", "./images/85.jpeg"],
+    ["Sandwich Bread / सैंडविच ब्रेड", 48, "400 g", "sandwich bread, सैंडविच ब्रेड, bread", "./images/86.jpeg"],
+    ["Bun / बुन", 32, "Pack", "bun, बुन, bread", "./images/87.jpeg"],
+    ["Garlic Bread / लहसुन ब्रेड", 70, "250 g", "garlic bread, लहसुन ब्रेड, bread", "./images/88.jpeg"],
+    ["Sliced Bread / स्लाइस्ड ब्रेड", 42, "300 g", "sliced bread, स्लाइस्ड ब्रेड, bread", "./images/89.jpeg"],
+    ["Multigrain Bread / मल्टीग्रेन ब्रेड", 58, "400 g", "multigrain bread, मल्टीग्रेन ब्रेड, bread", "./images/90.jpeg"]
+  ]],
+
+  ["Biscuits & Cookies / बिस्कुट और कुकीज़", "biscuit", [
+    ["Glucose Biscuits / ग्लूकोज बिस्कुट", 10, "Pack", "glucose biscuits, ग्लूकोज बिस्कुट, biscuit", "./images/91.jpeg"],
+    ["Marie Biscuits / मैरी बिस्कुट", 30, "Pack", "marie biscuits, मैरी बिस्कुट, biscuit", "./images/92.jpeg"],
+    ["Cream Biscuits / क्रीम बिस्कुट", 20, "Pack", "cream biscuits, क्रीम बिस्कुट, biscuit", "./images/93.jpeg"],
+    ["Chocolate Cookies / चॉकलेट कुकीज़", 50, "Pack", "chocolate cookies, चॉकलेट कुकीज़, cookies", "./images/94.jpeg"],
+    ["Butter Cookies / बटर कुकीज़", 45, "Pack", "butter cookies, बटर कुकीज़, cookies", "./images/95.jpeg"],
+    ["Digestive Biscuits / डाइजेस्टिव बिस्कुट", 40, "Pack", "digestive biscuits, डाइजेस्टिव बिस्कुट, biscuits", "./images/96.jpeg"],
+    ["Salted Crackers / सॉल्टेड क्रैकर्स", 25, "Pack", "salted crackers, सॉल्टेड क्रैकर्स, crackers", "./images/97.jpeg"],
+    ["Coconut Biscuits / नारियल बिस्कुट", 30, "Pack", "coconut biscuits, नारियल बिस्कुट, biscuits", "./images/98.jpeg"],
+    ["Jeera Biscuits / जीरा बिस्कुट", 35, "Pack", "jeera biscuits, जीरा बिस्कुट, biscuits", "./images/99.jpeg"],
+    ["Chocolate Wafers / चॉकलेट वेफर्स", 20, "Pack", "chocolate wafers, चॉकलेट वेफर्स, wafers", "./images/100.jpeg"],
+    ["Oat Cookies / ओट कुकीज़", 55, "Pack", "oat cookies, ओट कुकीज़, cookies", "./images/101.jpeg"],
+    ["Rich Tea Biscuits / रिच टी बिस्कुट", 32, "Pack", "rich tea biscuits, रिच टी बिस्कुट, biscuits", "./images/102.jpeg"],
+    ["Malted Biscuits / माल्टेड बिस्कुट", 38, "Pack", "malted biscuits, माल्टेड बिस्कुट, biscuits", "./images/103.jpeg"],
+    ["Butter Shortbread / बटर शॉर्टब्रेड", 48, "Pack", "butter shortbread, बटर शॉर्टब्रेड, biscuits", "./images/104.jpeg"],
+    ["Coconut Cookies / नारियल कुकीज़", 42, "Pack", "coconut cookies, नारियल कुकीज़, cookies", "./images/105.jpeg"]
+  ]],
+
+  ["Dairy & Eggs / डेयरी और अंडे", "milk", [
+    ["Fresh Milk / ताज़ा दूध", 30, "500 ml", "fresh milk, ताज़ा दूध, milk", "./images/106.jpeg"],
+    ["Curd / दही", 35, "400 g", "curd, दही, yogurt", "./images/107.jpeg"],
+    ["Paneer / पनीर", 90, "200 g", "paneer, पनीर, cottage cheese", "./images/108.jpeg"],
+    ["Cheese Slices / चीज़ स्लाइस", 110, "Pack", "cheese slices, चीज़ स्लाइस, cheese", "./images/109.jpeg"],
+    ["Buttermilk / छाछ", 20, "500 ml", "buttermilk, छाछ, drink", "./images/110.jpeg"],
+    ["Flavoured Milk / फ्लेवर मिल्क", 35, "200 ml", "flavoured milk, फ्लेवर मिल्क, milk", "./images/111.jpeg"],
+    ["Milk Powder / मिल्क पाउडर", 150, "200 g", "milk powder, मिल्क पाउडर, powder", "./images/112.jpeg"],
+    ["Fresh Cream / फ्रेस क्रीम", 65, "Pack", "fresh cream, फ्रेस क्रीम, dairy", "./images/113.jpeg"],
+    ["White Eggs / सफेद अंडे", 75, "6 pcs", "white eggs, सफेद अंडे, eggs", "./images/114.jpeg"],
+    ["Condensed Milk / कॉन्डेंस्ड मिल्क", 65, "200 g", "condensed milk, कॉन्डेंस्ड मिल्क, milk", "./images/115.jpeg"],
+    ["Buffalo Milk / भैंस का दूध", 35, "500 ml", "buffalo milk, भैंस का दूध, milk", "./images/116.jpeg"],
+    ["Skimmed Milk / स्किम्ड दूध", 28, "500 ml", "skimmed milk, स्किम्ड दूध, milk", "./images/117.jpeg"],
+    ["Toned Milk / टोन्ड दूध", 32, "500 ml", "toned milk, टोन्ड दूध, milk", "./images/118.jpeg"],
+    ["Lassi / लस्सी", 40, "300 ml", "lassi, लस्सी, yogurt drink", "./images/119.jpeg"],
+    ["Butter Milk / छाछ", 22, "500 ml", "butter milk, छाछ, beverage", "./images/120.jpeg"]
+  ]],
+
+  ["Tea & Beverages / चाय और पेय", "tea", [
+    ["Assam Tea / असम चाय", 120, "250 g", "assam tea, असम चाय, tea", "./images/121.jpeg"],
+    ["Green Tea / ग्रीन टी", 100, "Pack", "green tea, ग्रीन टी, tea", "./images/122.jpeg"],
+    ["Instant Coffee / इंस्टेंट कॉफी", 95, "50 g", "instant coffee, इंस्टेंट कॉफी, coffee", "./images/123.jpeg"],
+    ["Filter Coffee / फ़िल्टर कॉफी", 110, "100 g", "filter coffee, फ़िल्टर कॉफी, coffee", "./images/124.jpeg"],
+    ["Mango Drink / आम ड्रिंक", 40, "600 ml", "mango drink, आम ड्रिंक, juice", "./images/125.jpeg"],
+    ["Orange Drink / ऑरेंज ड्रिंक", 40, "600 ml", "orange drink, ऑरेंज ड्रिंक, juice", "./images/126.jpeg"],
+    ["Lemon Drink / लेमन ड्रिंक", 35, "600 ml", "lemon drink, लेमन ड्रिंक, juice", "./images/127.jpeg"],
+    ["Coconut Water / नारियल पानी", 45, "Pack", "coconut water, नारियल पानी, drink", "./images/128.jpeg"],
+    ["Glucose Powder / ग्लूकोज पाउडर", 40, "Pack", "glucose powder, ग्लूकोज पाउडर, drink", "./images/129.jpeg"],
+    ["Drinking Water / पियेंठा पानी", 20, "1 litre", "drinking water, पियेंठा पानी, water", "./images/130.jpeg"],
+    ["Masala Chai / मसाला चाय", 40, "50 g", "masala chai, मसाला चाय, tea", "./images/131.jpeg"],
+    ["Cold Coffee / कोल्ड कॉफी", 80, "200 ml", "cold coffee, कोल्ड कॉफी, coffee", "./images/132.jpeg"],
+    ["Apple Juice / सेब का जूस", 75, "1 litre", "apple juice, सेब का जूस, juice", "./images/133.jpeg"],
+    ["Orange Juice / ऑरेंज जूस", 80, "1 litre", "orange juice, ऑरेंज जूस, juice", "./images/134.jpeg"],
+    ["Energy Drink / एनर्जी ड्रिंक", 95, "250 ml", "energy drink, एनर्जी ड्रिंक, beverage", "./images/135.jpeg"]
+  ]],
+
+  ["Snacks & Namkeen / स्नैक्स और नमकीन", "snack", [
+    ["Aloo Bhujia / आलू भुजिया", 35, "150 g", "aloo bhujia, आलू भुजिया, namkeen", "./images/136.jpeg"],
+    ["Masala Sev / मसाला सेव", 35, "150 g", "masala sev, मसाला सेव, snack", "./images/137.jpeg"],
+    ["Moong Dal Namkeen / मूंग दाल नमकीन", 35, "150 g", "moong dal namkeen, मूंग दाल नमकीन, snack", "./images/138.jpeg"],
+    ["Peanut Masala / मूंगफली मसाला", 40, "150 g", "peanut masala, मूंगफली मसाला, snack", "./images/139.jpeg"],
+    ["Potato Chips / पोटेटो चिप्स", 20, "Pack", "potato chips, पोटेटो चिप्स, chips", "./images/140.jpeg"],
+    ["Banana Chips / केला चिप्स", 45, "150 g", "banana chips, केला चिप्स, chips", "./images/141.jpeg"],
+    ["Popcorn / पोपकॉर्न", 30, "Pack", "popcorn, पोपकॉर्न, snack", "./images/142.jpeg"],
+    ["Instant Noodles / इंस्टेंट नूडल्स", 15, "Pack", "instant noodles, इंस्टेंट नूडल्स, noodles", "./images/143.jpeg"],
+    ["Cup Noodles / कप नूडल्स", 50, "Cup", "cup noodles, कप नूडल्स, noodles", "./images/144.jpeg"],
+    ["Roasted Chana / रोस्टेड चना", 40, "200 g", "roasted chana, रोस्टेड चना, snack", "./images/145.jpeg"],
+    ["Mixture / मिक्सचर", 45, "200 g", "mixture, मिक्सचर, namkeen", "./images/146.jpeg"],
+    ["Murukku / मुरुक्कु", 38, "200 g", "murukku, मुरुक्कु, namkeen", "./images/147.jpeg"],
+    ["Cheese Balls / चीज़ बॉल्स", 35, "100 g", "cheese balls, चीज़ बॉल्स, snack", "./images/148.jpeg"],
+    ["Cornflakes / कॉर्नफ़्लेक्स", 65, "300 g", "cornflakes, कॉर्नफ़्लेक्स, breakfast", "./images/149.jpeg"],
+    ["Trail Mix / ट्रेल मिक्स", 120, "200 g", "trail mix, ट्रेल मिक्स, snack", "./images/150.jpeg"]
+  ]],
+
+  ["Fruits & Vegetables / फल और सब्जियां", "vegetables", [
+    ["Fresh Potatoes / ताज़े आलू", 30, "1 kg", "fresh potatoes, ताज़े आलू, vegetable", "./images/151.jpeg"],
+    ["Fresh Onions / ताज़े प्याज", 35, "1 kg", "fresh onions, ताज़े प्याज, vegetable", "./images/152.jpeg"],
+    ["Tomatoes / टमाटर", 40, "1 kg", "tomatoes, टमाटर, vegetable", "./images/153.jpeg"],
+    ["Green Chilli / हरी मिर्च", 20, "100 g", "green chilli, हरी मिर्च, vegetable", "./images/154.jpeg"],
+    ["Ginger / अदरक", 25, "100 g", "ginger, अदरक, vegetable", "./images/155.jpeg"],
+    ["Garlic / लहसुन", 35, "250 g", "garlic, लहसुन, vegetable", "./images/156.jpeg"],
+    ["Fresh Lemon / ताज़ा नींबू", 30, "250 g", "fresh lemon, ताज़ा नींबू, fruit", "./images/157.jpeg"],
+    ["Bananas / केले", 50, "Dozen", "bananas, केले, fruit", "./images/158.jpeg"],
+    ["Apples / सेब", 120, "1 kg", "apples, सेब, fruit", "./images/159.jpeg"],
+    ["Oranges / संतरे", 70, "1 kg", "oranges, संतरे, fruit", "./images/160.jpeg"],
+    ["Mangoes / आम", 90, "1 kg", "mangoes, आम, fruit", "./images/161.jpeg"],
+    ["Grapes / अंगूर", 80, "500 g", "grapes, अंगूर, fruit", "./images/162.jpeg"],
+    ["Papaya / पपीता", 55, "1 pc", "papaya, पपीता, fruit", "./images/163.jpeg"],
+    ["Cucumber / ककड़ी", 25, "1 pc", "cucumber, ककड़ी, vegetable", "./images/164.jpeg"],
+    ["Carrots / गाजर", 35, "500 g", "carrots, गाजर, vegetable", "./images/165.jpeg"]
+  ]],
+
+  ["Household & Personal Care / घरेलू और व्यक्तिगत देखभाल", "soap", [
+    ["Bathing Soap / बाथिंग साबुन", 35, "100 g", "bathing soap, बाथिंग साबुन, soap", "./images/166.jpeg"],
+    ["Shampoo Sachets / शैम्पू Sachet", 2, "1 sachet", "shampoo sachet, शैम्पू Sachet, personal care", "./images/167.jpeg"],
+    ["Shampoo Bottle / शैंपू बोतल", 120, "180 ml", "shampoo bottle, शैंपू बोतल, personal care", "./images/168.jpeg"],
+    ["Toothpaste / टूथपेस्ट", 65, "100 g", "toothpaste, टूथपेस्ट, personal care", "./images/169.jpeg"],
+    ["Toothbrush / टूथब्रश", 25, "1 pc", "toothbrush, टूथब्रश, personal care", "./images/170.jpeg"],
+    ["Washing Powder / वॉशिंग पाउडर", 60, "500 g", "washing powder, वॉशिंग पाउडर, laundry", "./images/171.jpeg"],
+    ["Dishwash Bar / डिशवॉश बार", 20, "1 pc", "dishwash bar, डिशवॉश बार, kitchen", "./images/172.jpeg"],
+    ["Dishwash Liquid / डिशवॉश लिक्विड", 85, "500 ml", "dishwash liquid, डिशवॉश लिक्विड, kitchen", "./images/173.jpeg"],
+    ["Floor Cleaner / फ्लोर क्लीनर", 95, "500 ml", "floor cleaner, फ्लोर क्लीनर, household", "./images/174.jpeg"],
+    ["Toilet Cleaner / टॉयलेट क्लीनर", 100, "500 ml", "toilet cleaner, टॉयलेट क्लीनर, household", "./images/175.jpeg"],
+    ["Hand Wash / हैंडवॉश", 70, "250 ml", "hand wash, हैंडवॉश, hygiene", "./images/176.jpeg"],
+    ["Sanitary Pads / सैनिटरी पैड्स", 80, "Pack", "sanitary pads, सैनिटरी पैड्स, hygiene", "./images/177.jpeg"],
+    ["Soap Bar / साबुन बार", 28, "1 pc", "soap bar, साबुन बार, soap", "./images/178.jpeg"],
+    ["Laundry Liquid / लॉन्ड्री लिक्विड", 120, "500 ml", "laundry liquid, लॉन्ड्री लिक्विड, washing", "./images/179.jpeg"],
+    ["Vim Cleaner / विम क्लीनर", 70, "250 g", "vim cleaner, विम क्लीनर, household", "./images/180.jpeg"]
+  ]],
+
+  ["Cooking Essentials / खाना पकाने की चीज़ें", "cooking", [
+    ["Salt / नमक", 20, "1 kg", "salt, नमक, cooking essential", "./images/181.jpeg"],
+    ["Sugar / चीनी", 42, "1 kg", "sugar, चीनी, cooking essential", "./images/182.jpeg"],
+    ["Jaggery / गुड़", 55, "500 g", "jaggery, गुड़, sweetener", "./images/183.jpeg"],
+    ["Tea Leaves / चाय पत्ती", 90, "250 g", "tea leaves, चाय पत्ती, tea", "./images/184.jpeg"],
+    ["Baking Soda / बेकिंग सोडा", 30, "200 g", "baking soda, बेकिंग सोडा, baking", "./images/185.jpeg"],
+    ["Baking Powder / बेकिंग पाउडर", 40, "200 g", "baking powder, बेकिंग पाउडर", "./images/186.jpeg"],
+    ["Cornstarch / कॉर्नस्टार्च", 35, "200 g", "cornstarch, कॉर्नस्टार्च, starch", "./images/187.jpeg"],
+    ["Custard Powder / कस्टर्ड पाउडर", 50, "200 g", "custard powder, कस्टर्ड पाउडर", "./images/188.jpeg"],
+    ["Pasta / पास्ता", 60, "500 g", "pasta, पास्ता, food", "./images/189.jpeg"],
+    ["Noodles / नूडल्स", 55, "500 g", "noodles, नूडल्स, food", "./images/190.jpeg"],
+    ["Coriander Leaves / धनिया पत्ता", 15, "1 bunch", "coriander leaves, धनिया पत्ता, herbs", "./images/191.jpeg"],
+    ["Mint Leaves / पुदीना", 18, "1 bunch", "mint leaves, पुदीना, herbs", "./images/192.jpeg"],
+    ["Turmeric Root / हल्दी जड़", 30, "150 g", "turmeric root, हल्दी जड़", "./images/193.jpeg"],
+    ["Cumin Powder / जीरा पाउडर", 48, "100 g", "cumin powder, जीरा पाउडर, spice", "./images/194.jpeg"],
+    ["Black Salt / काला नमक", 38, "200 g", "black salt, काला नमक, salt", "./images/195.jpeg"]
+  ]],
+
+  ["Breakfast & Instant Food / ब्रेकफास्ट और इंस्टेंट फूड", "breakfast", [
+    ["Instant Upma / इंस्टेंट उपमा", 35, "200 g", "instant upma, इंस्टेंट उपमा, breakfast", "./images/196.jpeg"],
+    ["Semolina Mix / सेमोलिना मिक्स", 40, "500 g", "semolina mix, सेमोलिना मिक्स", "./images/197.jpeg"],
+    ["Corn Flakes / कॉर्नफ्लेक्स", 65, "300 g", "cornflakes, कॉर्नफ्लेक्स, cereal", "./images/198.jpeg"],
+    ["Oats / ओट्स", 75, "500 g", "oats, ओट्स, breakfast", "./images/199.jpeg"],
+    ["Muesli / म्यूज़ली", 150, "500 g", "muesli, म्यूज़ली, breakfast", "./images/200.jpeg"]
+  ]]
+];
+
+// Product list
+const products = [];
+let nextId = 1;
+
+// Fallback image
+const defaultImage = "./images/default-grocery.jpeg";
+
+catalog.forEach(([category, group, items]) => {
+  items.forEach((it) => {
+    const productName = it[0];
+    const price = it[1];
+    const unit = it[2];
+    const tags = it[3];
+    const imageUrl = it[4] || defaultImage;
+
+    products.push({
+      id: nextId++,
+      name: productName,
+      price,
+      oldPrice: Math.round(price * 1.15),
+      unit,
+      category,
+      terms: tags,
+      imageUrl
+    });
+  });
+});
+
+const categories = ["All Products", ...catalog.map(c => c[0])];
+let activeCategory = "All Products", searchTerm = "", cart = {};
+
+try {
+  cart = JSON.parse(localStorage.getItem("freshBasketCart")) || {};
+} catch (e) {
+  cart = {};
+}
+
+function formatPrice(n) {
+  return "₹" + Number(n).toLocaleString("en-IN");
+}
+
+function renderCategories() {
+  const el = document.getElementById("categoryList");
+  el.innerHTML = "";
+  categories.forEach(cat => {
+    const b = document.createElement("button");
+    b.className = "category-btn" + (cat === activeCategory ? " active" : "");
+    b.textContent = cat;
+    b.onclick = () => {
+      activeCategory = cat;
+      renderCategories();
+      renderProducts();
+      document.getElementById("products").scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    el.appendChild(b);
+  });
+}
+
+function renderProducts() {
+  const grid = document.getElementById("productGrid");
+  const no = document.getElementById("noResults");
+
+  let list = products.filter(p =>
+    (activeCategory === "All Products" || p.category === activeCategory) &&
+    (p.name + " " + p.category + " " + p.unit + " " + p.terms).toLowerCase().includes(searchTerm)
+  );
+
+  const sort = document.getElementById("sortSelect")?.value || "featured";
+
+  if (sort === "price-low") list.sort((a, b) => a.price - b.price);
+  if (sort === "price-high") list.sort((a, b) => b.price - a.price);
+  if (sort === "name") list.sort((a, b) => a.name.localeCompare(b.name));
+
+  document.getElementById("productHeading").textContent = activeCategory;
+  document.getElementById("productCount").textContent = `${list.length} products to explore`;
+
+  grid.innerHTML = "";
+  no.style.display = list.length ? "none" : "block";
+
+  list.forEach(p => {
+    const card = document.createElement("article");
+    card.className = "product-card";
+
+    const wrap = document.createElement("div");
+    wrap.className = "product-image-wrap";
+
+    const img = document.createElement("img");
+img.className = "product-image";
+img.src = p.imageUrl;
+img.alt = p.name;
+img.loading = "lazy";
+
+img.onerror = function () {
+  this.onerror = null;
+  this.src = "./images/default-grocery.jpeg";
+};
+
+    const label = document.createElement("span");
+    label.className = "product-label";
+    label.textContent = "Popular pick";
+
+    wrap.append(img, label);
+
+    const body = document.createElement("div");
+    body.className = "product-body";
+
+    const cat = document.createElement("div");
+    cat.className = "product-category";
+    cat.textContent = p.category;
+
+    const name = document.createElement("h3");
+    name.className = "product-name";
+    name.textContent = p.name;
+
+    const unit = document.createElement("div");
+    unit.className = "product-weight";
+    unit.textContent = p.unit;
+
+    const priceLine = document.createElement("div");
+    priceLine.className = "price-line";
+
+    const box = document.createElement("div");
+
+    const price = document.createElement("div");
+    price.className = "product-price";
+    price.textContent = formatPrice(p.price);
+
+    const old = document.createElement("div");
+    old.className = "product-old";
+    old.textContent = formatPrice(p.oldPrice);
+
+    box.append(price, old);
+
+    const disc = document.createElement("span");
+    disc.className = "discount";
+    disc.textContent = "DEMO PRICE";
+
+    priceLine.append(box, disc);
+
+    const actions = document.createElement("div");
+    actions.className = "product-actions";
+
+    const add = document.createElement("button");
+    add.className = "add-btn";
+    add.innerHTML = '<i class="bi bi-cart-plus"></i> Add';
+    add.onclick = () => addToCart(p.id);
+
+    const buy = document.createElement("button");
+    buy.className = "buy-btn";
+    buy.innerHTML = '<i class="bi bi-bag-check"></i> Buy now';
+    buy.onclick = () => {
+      addToCart(p.id, false);
+      openCart();
+    };
+
+    actions.append(add, buy);
+
+    body.append(cat, name, unit, priceLine, actions);
+    card.append(wrap, body);
+    grid.appendChild(card);
+  });
+}
+
+function saveCart() {
+  try {
+    localStorage.setItem("freshBasketCart", JSON.stringify(cart));
+  } catch (e) {}
+}
+
+function addToCart(id, message = true) {
+  const p = products.find(x => x.id === id);
+  if (!p) return;
+
+  cart[id] = (cart[id] || 0) + 1;
+  saveCart();
+  updateCart();
+
+  if (message) showToast(p.name + " added to your basket");
+}
+
+function changeQty(id, delta) {
+  cart[id] = (cart[id] || 0) + delta;
+  if (cart[id] <= 0) delete cart[id];
+
+  saveCart();
+  updateCart();
+}
+
+function updateCart() {
+  document.getElementById("cartCount").textContent = Object.values(cart).reduce((s, q) => s + q, 0);
+
+  const el = document.getElementById("cartItems");
+  el.innerHTML = "";
+
+  let total = 0;
+  const entries = Object.entries(cart).filter(([id, q]) => q > 0 && products.some(p => p.id === Number(id)));
+
+  if (!entries.length) {
+    el.innerHTML = '<div class="empty-cart"><i class="bi bi-basket" style="font-size:38px"></i><p style="margin-top:12px">Your basket is waiting.</p><p style="font-size:12px;margin-top:6px">Add some everyday favourites.</p></div>';
+  }
+
+  entries.forEach(([id, q]) => {
+    const p = products.find(x => x.id === Number(id));
+    if (!p) return;
+
+    total += p.price * q;
+
+    const row = document.createElement("div");
+    row.className = "cart-item";
+
+    const img = document.createElement("img");
+img.className = "product-image";
+img.src = p.imageUrl;
+img.alt = p.name;
+img.loading = "lazy";
+
+img.onerror = function () {
+  this.onerror = null;
+  this.src = "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80";
+};
+
+    const info = document.createElement("div");
+    const title = document.createElement("h4");
+    title.textContent = p.name;
+
+    const price = document.createElement("div");
+    price.className = "cart-item-price";
+    price.textContent = formatPrice(p.price * q);
+
+    const qty = document.createElement("div");
+    qty.className = "qty-row";
+
+    const minus = document.createElement("button");
+    minus.textContent = "−";
+    minus.setAttribute("aria-label", "Decrease quantity");
+    minus.onclick = () => changeQty(p.id, -1);
+
+    const count = document.createElement("span");
+    count.textContent = q;
+
+    const plus = document.createElement("button");
+    plus.textContent = "+";
+    plus.setAttribute("aria-label", "Increase quantity");
+    plus.onclick = () => changeQty(p.id, 1);
+
+    qty.append(minus, count, plus);
+    info.append(title, price, qty);
+
+    row.append(img, info);
+    el.appendChild(row);
+  });
+
+  document.getElementById("cartTotal").textContent = formatPrice(total);
+}
+
+function openCart() {
+  document.getElementById("cartOverlay").classList.add("open");
+  document.body.style.overflow = "hidden";
+  updateCart();
+}
+
+function closeCart() {
+  document.getElementById("cartOverlay").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+function overlayClick(e) {
+  if (e.target.id === "cartOverlay") closeCart();
+}
+
+function showToast(msg) {
+  const el = document.getElementById("toast");
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(window.toastTimer);
+  window.toastTimer = setTimeout(() => el.classList.remove("show"), 2300);
+}
+
+function searchProducts() {
+  searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
+  renderProducts();
+  document.getElementById("products").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+document.getElementById("searchInput").addEventListener("input", e => {
+  searchTerm = e.target.value.trim().toLowerCase();
+  renderProducts();
+});
+
+document.getElementById("sortSelect").addEventListener("change", renderProducts);
+
+function checkout() {
+  const entries = Object.entries(cart).filter(([id, q]) => q > 0 && products.some(p => p.id === Number(id)));
+
+  if (!entries.length) {
+    showToast("Please add products to your basket first.");
+    return;
+  }
+
+  if (!STORE_WHATSAPP || STORE_WHATSAPP === "919876543210") {
+    showToast("Please add your real store WhatsApp number in the code first.");
+    return;
+  }
+
+  const lines = ["*Fresh Basket — New Grocery Order*", "", "Order items:"];
+  let total = 0;
+
+  entries.forEach(([id, q]) => {
+    const p = products.find(x => x.id === Number(id));
+    if (!p) return;
+
+    const sub = p.price * q;
+    total += sub;
+    lines.push(`• ${p.name} (${p.unit}) x ${q} = ${formatPrice(sub)}`);
+  });
+
+  lines.push("", `*Estimated total: ${formatPrice(total)}*`, "", "Please confirm availability, delivery charges and final prices.", "Customer name:", "Delivery address:", "Payment preference:");
+
+  window.open("https://wa.me/" + STORE_WHATSAPP + "?text=" + encodeURIComponent(lines.join("\n")), "_blank");
+}
+
+renderCategories();
+renderProducts();
+updateCart();
+</script>
+</body>
+</html>
